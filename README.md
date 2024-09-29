@@ -186,11 +186,32 @@ python predictions.py  --dataset_name MSLS  --your_method_path ./logs/lightning_
 python cluster_analysis.py  --dataset_name MSLS --method_our dnv2_NV_AB --baseline_name dnv2_NV_192PCA_AB --your_method_path ./logs/lightning_logs/dnv2_NV_AB/wpca8192_last.ckpt_MSLS_predictions.npz --baseline_path ./logs/lightning_logs/dnv2_NV_192PCA_AB/wpca8192_last.ckpt_MSLS_predictions.npz
 ```
 
+## Cite
+
+If you find our work valuable for your research, please consider citing our paper:
+
+```
+@inproceedings{khaliq2024vlad,
+  title={Vlad-buff: Burst-aware fast feature aggregation for visual place recognition},
+  author={Khaliq, Ahmad and Xu, Ming and Hausler, Stephen and Milford, Michael and Garg, Sourav},
+  booktitle={European Conference on Computer Vision. Springer},
+  volume={3},
+  number={4},
+  pages={8},
+  year={2024}
+}
+```
+
 ## Acknowledgements
 
 This code is built upon the following work:
+ - [AnyLoc](https://github.com/AnyLoc/AnyLoc)
  - [SALAD](https://github.com/amaralibey//serizba/salad)
  - [Deep Visual Geo-localization Benchmark](https://github.com/gmberton/deep-visual-geo-localization-benchmark)
+ - [CosPlace](https://github.com/gmberton/CosPlace)
+ - [EigenPlaces](https://github.com/gmberton/EigenPlaces)
  - [MixVPR](https://github.com/amaralibey/MixVPR)
  - [GSV-Cities](https://github.com/amaralibey/gsv-cities)
  - [DINOv2](https://github.com/facebookresearch/dinov2)
+ - [VPR-methods-evaluation](https://github.com/gmberton/VPR-methods-evaluation)
+ - [VPR-datasets-downloader](https://github.com/gmberton/VPR-datasets-downloader)
