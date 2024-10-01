@@ -12,7 +12,7 @@ VLAD-BuFF addresses these challenges through two key innovations:
 
 Benchmark results on nine public datasets demonstrate that VLAD-BuFF achieves state-of-the-art performance while maintaining high recall, even with significantly reduced feature dimensions. This enables faster aggregation and improved computational efficiency.
 
-For more details, refer to the paper at [arXiv]().
+For more details, refer to the paper at [arXiv](https://arxiv.org/abs/2409.19293).
 
 ![Method](assets/vlad_buff_pipeline.jpg)
 
