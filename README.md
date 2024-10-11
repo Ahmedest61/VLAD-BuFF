@@ -22,7 +22,20 @@ The code has been tested on PyTorch 2.1.0 with CUDA 12.1 and Xformers. To create
 ```bash
 conda env create -f environment.yml
 ```
+## Trained Models
 
+You can easily load and test our VLAD-BuFF models via Torch Hub with just a few lines of code:
+
+```python
+import torch
+model = torch.hub.load("Ahmedest61/VLAD-BuFF", "vlad_buff", antiburst=True, nv_pca=None, wpca=True, num_pcs=8192)
+model.eval()
+model.cuda()
+
+model = torch.hub.load("Ahmedest61/VLAD-BuFF", "vlad_buff", antiburst=True, nv_pca=192, wpca=True, num_pcs=4096)
+model.eval()
+model.cuda()
+```
 ## Dataset
 
 For training, download the [GSV-Cities](https://github.com/amaralibey/gsv-cities) dataset. For evaluation download the desired datasets ([MSLS](https://github.com/FrederikWarburg/mapillary_sls), [NordLand](https://surfdrive.surf.nl/files/index.php/s/sbZRXzYe3l0v67W), [SPED](https://surfdrive.surf.nl/files/index.php/s/sbZRXzYe3l0v67W), [Pittsburgh](https://data.ciirc.cvut.cz/public/projects/2015netVLAD/Pittsburgh250k/), [Sfsm](), [Toyko247](https://github.com/gmberton/VPR-datasets-downloader), [StLucia](https://github.com/gmberton/VPR-datasets-downloader), [Baidu](https://github.com/AnyLoc/AnyLoc) and [AmsterTime](https://github.com/gmberton/VPR-datasets-downloader))

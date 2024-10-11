@@ -106,7 +106,7 @@ def get_pca_encoding(model, vlad_encoding):
 def get_descriptors(model, dataloader):
     descriptors = []
     with torch.no_grad():
-        with torch.autocast(device_type="cuda", dtype=torch.float16):
+        with torch.autocast(device_type=args.device, dtype=torch.float16):
             for batch in tqdm(dataloader, "Calculating descritptors..."):
                 imgs, labels = batch
                 imgs = imgs.to(args.device)
@@ -192,7 +192,7 @@ def load_model():
     else:
         model.load_state_dict(torch.load(args.resume_train))
     model = model.eval()
-    model = model.to("cuda")
+    model = model.to(args.device)
     print(f"Loaded model from {args.resume_train} Successfully!")
     return model
 
