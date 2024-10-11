@@ -24,14 +24,9 @@ conda env create -f environment.yml
 ```
 ## Trained Models
 
-You can easily load and test our VLAD-BuFF models via Torch Hub with just a few lines of code:
+You can easily load and test our VLAD-BuFF model via Torch Hub with just a few lines of code:
 
 ```python
-import torch
-model = torch.hub.load("Ahmedest61/VLAD-BuFF", "vlad_buff", antiburst=True, nv_pca=None, wpca=True, num_pcs=8192)
-model.eval()
-model.cuda()
-
 model = torch.hub.load("Ahmedest61/VLAD-BuFF", "vlad_buff", antiburst=True, nv_pca=192, wpca=True, num_pcs=4096)
 model.eval()
 model.cuda()

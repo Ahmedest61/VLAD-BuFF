@@ -5,7 +5,6 @@ import wandb
 from torch.utils.data import Subset
 import utils
 from models import helper
-from dataloaders.GSVCitiesDataset import GSVCitiesDataset
 from models.helper import L2Norm, Flatten
 from torchvision import transforms as T
 from torch import nn
@@ -92,6 +91,7 @@ class VPRModel(pl.LightningModule):
 
             # cluster using gsv single city
             if agg_config.initialize_clusters:
+                from dataloaders.GSVCitiesDataset import GSVCitiesDataset
                 # Instantiate GSVCitiesDataset with the desired city
                 selected_city = "London"  # Replace with the city you want
                 single_city_dataset = GSVCitiesDataset(
