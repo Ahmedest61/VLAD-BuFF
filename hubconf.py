@@ -244,7 +244,6 @@ def parse_args(antiburst=False, nv_pca=None, wpca=False, num_pcs=8192):
     parser.add_argument(
         "--resume_train",
         type=str,
-        required=True,
         default=None,
         help="path to checkpoint to resume, e.g. logs/.../last_checkpoint.pth",
     )
