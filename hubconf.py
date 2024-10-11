@@ -330,11 +330,7 @@ def vlad_buff(
     assert args.antiburst == True
     assert args.wpca == True
 
-    agg_args = {
-        "clusters_num": args.clusters_num,
-        "dim": args.dim,
-        "args": args,
-    }
+    agg_args = args
 
     assert (
         args.backbone in DINOV2_ARCHS.keys()
