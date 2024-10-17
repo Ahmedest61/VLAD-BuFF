@@ -27,6 +27,7 @@ conda env create -f environment.yml
 You can easily load and test our VLAD-BuFF model via Torch Hub with just a few lines of code:
 
 ```python
+import torch
 model = torch.hub.load("Ahmedest61/VLAD-BuFF", "vlad_buff", antiburst=True, nv_pca=192, wpca=True, num_pcs=4096)
 model.eval()
 model.cuda()
@@ -214,7 +215,7 @@ If you find our work valuable for your research, please consider citing our pape
 
 This code is built upon the following work:
  - [AnyLoc](https://github.com/AnyLoc/AnyLoc)
- - [SALAD](https://github.com/amaralibey//serizba/salad)
+ - [SALAD](https://github.com/serizba/salad)
  - [Deep Visual Geo-localization Benchmark](https://github.com/gmberton/deep-visual-geo-localization-benchmark)
  - [CosPlace](https://github.com/gmberton/CosPlace)
  - [EigenPlaces](https://github.com/gmberton/EigenPlaces)
