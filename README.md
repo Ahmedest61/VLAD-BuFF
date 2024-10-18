@@ -224,3 +224,7 @@ This code is built upon the following work:
  - [DINOv2](https://github.com/facebookresearch/dinov2)
  - [VPR-methods-evaluation](https://github.com/gmberton/VPR-methods-evaluation)
  - [VPR-datasets-downloader](https://github.com/gmberton/VPR-datasets-downloader)
+
+## Other Related works
+
+ - [Deep Attentional Structured Representation Learning for Visual Recognition](https://arxiv.org/pdf/1805.05389)
